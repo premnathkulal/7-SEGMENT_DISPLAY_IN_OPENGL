@@ -51,7 +51,7 @@ void myInit()
 		
 		glClearColor(0.0f, 0.0f, 0.0f, 0.0f );
 		 
-		glLineWidth(20);
+		glLineWidth(100);
 		
 		
 }
@@ -115,6 +115,10 @@ void init_display()
 				glVertex2f(ww-(ww/1.22)+(ww/3.1), wh-(wh/1.138)+(wh/1.5)-(wh/10.2));//a
 				glVertex2f(ww-(ww/1.22)+(ww/3.1), wh-(wh/1.138)+(wh/1.5)-(wh/3)); //c
 				glVertex2f(ww-(ww/1.22)+(ww/2.0), wh-(wh/1.138)+(wh/1.5)-(wh/3)); //d
+				
+				glVertex2f(ww-(ww/1.22)+(ww/3.1), wh-(wh/1.138)+(wh/1.5)-(wh/3)); //c
+				glVertex2f(ww-(ww/1.22)+(ww/2.0), wh-(wh/1.138)+(wh/1.5)-(wh/3)); //d
+				
 				glVertex2f(ww-(ww/1.22)+(ww/2.0), wh-(wh/1.138)+(wh/10.2)); //f
 				glVertex2f(ww-(ww/1.22)+(ww/3.1), wh-(wh/1.138)+(wh/10.2)); //e
 				glVertex2f(ww-(ww/1.22)+(ww/2.0), wh-(wh/1.138)+(wh/10.2)); //f
@@ -182,7 +186,7 @@ void displayDig(int dig){
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 			myInit();
 			init_display();
-			glColor3f(1.0, 0.0, 0.0);
+			glColor3f(0.0, 0.0, 1.0);
 		
 	switch(dig){
 	
@@ -402,4 +406,3 @@ glVertex2f(ww-(ww/1.22)+(ww/10.8), wh-(wh/1.138)+(wh/10.2)); //e
 glVertex2f(ww-(ww/1.22)+(ww/3.6), wh-(wh/1.138)+(wh/10.2)); //f
 */
 				
-
